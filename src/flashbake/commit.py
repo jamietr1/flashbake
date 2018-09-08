@@ -28,7 +28,7 @@ import sys
 
 
 
-DELETED_RE = re.compile('#\s*deleted:.*')
+DELETED_RE = re.compile('\s*deleted:.*')
 
 def commit(control_config, hot_files, quiet_mins):
     # change to the project directory, necessary to find the .flashbake file and
